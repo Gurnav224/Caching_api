@@ -1,0 +1,35 @@
+{
+  "name": "caching_api",
+  "version": "1.0.0",
+  "description": "a caching api built with node js + express + mongod",
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "homepage": "https://github.com/Gurnav224/Caching_api#readme",
+  "bugs": {
+    "url": "https://github.com/Gurnav224/Caching_api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gurnav224/Caching_api.git"
+  },
+  "license": "ISC",
+  "author": "gurnav224",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env index",
+    "dev": "nodemon --env-file=.env index"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
