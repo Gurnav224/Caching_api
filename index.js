@@ -2,6 +2,7 @@ const express = require("express");
 const dbConnect = require("./config/dbConnect");
 const cacheRouter = require('./routes/cacheItem.routes');
 const morgan = require('morgan')
+require('dotenv').config()
 
 const app = express();
 
