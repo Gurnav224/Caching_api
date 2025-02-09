@@ -12,7 +12,7 @@ The API enforces a maximum cache size of 10 items. If the cache is full, attempt
 
 The API is deployed on Vercel and is accessible at:
 
-https://caching-api-three.vercel.app
+https://caching-api-vurb.onrender.com
 
 
 
@@ -28,7 +28,7 @@ Adds a new key-value pair or updates the value if the key already exists.
 **Example using cURL:**
 
 ```bash
-curl -X POST https://caching-api-three.vercel.app/api/cache \
+curl -X POST https://caching-api-vurb.onrender.com/api/cache \
   -H "Content-Type: application/json" \
   -d '{"name": "product 9", "description": "This is a sample product description"}'
 
@@ -41,7 +41,7 @@ Retrieves the value associated with the given key.
 Example using cURL to retrieve the key "product 9":
 
 ```bash
-curl https://caching-api-three.vercel.app/api/cache/product%209
+curl https://caching-api-vurb.onrender.com/api/cache/product%209
 ```
 
 - A successful request returns the key and its value.
@@ -55,7 +55,7 @@ Removes the key-value pair for the specified key.
 Example using cURL to delete the key "product 9":
 
 ```bash
-curl -X DELETE https://caching-api-three.vercel.app/api/cache/product%209
+curl -X DELETE https://caching-api-vurb.onrender.com/api/cache/product%209
 ```
 
 - A successful deletion returns a confirmation message.
